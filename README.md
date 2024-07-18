@@ -1,5 +1,6 @@
 # READ ME
-The follwing is a work in progress with interations can changes constantly happening.
+The following  is a work in progress with interations can changes constantly happening. You can find and run the scripts at :
+https://colab.research.google.com/drive/149f45omRzeAwv6vBBZyYt6wkbyJUtkWp?usp=sharing
 # Electrokinetic Induction
 
 
