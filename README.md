@@ -1,4 +1,4 @@
-#Read me
+# READ ME
 The follwing is a work in progress with interations can changes constantly happening.
 # Electrokinetic Induction
 
