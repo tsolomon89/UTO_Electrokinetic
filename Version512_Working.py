@@ -1,26 +1,29 @@
 # ---------------------
 # --- Version 5.1.2 ---
 # ---------------------
+import subprocess
+import sys
+
 try:
-    import fpdf
+    from fpdf import FPDF
 except ModuleNotFoundError:
     print("fpdf not found, installing...")
-    !pip install --quiet fpdf2  # Use --quiet to suppress excessive output
-    import fpdf # Import the module after installation
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "--quiet", "fpdf2"])
+    from fpdf import FPDF
 
 try:
     import seaborn
 except ModuleNotFoundError:
     print("seaborn not found, installing...")
-    !pip install seaborn
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "seaborn"])
     import seaborn
 try:
     import IPython
 except ModuleNotFoundError:
     print("IPython not found, installing...")
-    !pip IPython seaborn
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "IPython"])
     import IPython
-%matplotlib inline
+
 from typing import Dict, Callable, Tuple, List
 import numpy as np
 import sympy as sp
